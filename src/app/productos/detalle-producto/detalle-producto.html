@@ -1,0 +1,15 @@
+<div>
+
+  <a routerLink="/productos">← Volver a productos</a>
+
+  <div class="detalle" *ngIf="producto; else noEncontrado">
+    <h2>{{ producto.nombre }}</h2>
+    <p class="precio">{{ producto.precio | currency:'ARS':'symbol':'1.0-0' }}</p>
+    <p class="descripcion">{{ producto.descripcion }}</p>
+  </div>
+
+  <ng-template #noEncontrado>
+    <p>Producto no encontrado.</p>
+  </ng-template>
+
+</div>

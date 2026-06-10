@@ -1,0 +1,36 @@
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.producto-info h3 {
+  margin: 0 0 6px 0;
+  color: #222;
+}
+
+.producto-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.producto a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.producto a:hover {
+  text-decoration: underline;
+}

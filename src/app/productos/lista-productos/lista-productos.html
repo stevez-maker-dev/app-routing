@@ -1,0 +1,13 @@
+<div>
+  <h2>Lista de Productos</h2>
+
+  <p *ngIf="productos.length === 0">No hay productos disponibles.</p>
+
+  <div class="producto" *ngFor="let producto of productos">
+    <div class="producto-info">
+      <h3>{{ producto.nombre }}</h3>
+      <p>{{ producto.precio | currency:'ARS':'symbol':'1.0-0' }}</p>
+    </div>
+    <a [routerLink]="['/productos', producto.id]">Ver detalle →</a>
+  </div>
+</div>

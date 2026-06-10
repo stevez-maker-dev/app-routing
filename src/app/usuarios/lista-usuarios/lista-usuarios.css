@@ -1,0 +1,23 @@
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.usuario {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.usuario h3 {
+  margin: 0 0 6px 0;
+  color: #222;
+}
+
+.usuario p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
