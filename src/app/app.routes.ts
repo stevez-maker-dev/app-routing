@@ -8,18 +8,13 @@ export const routes: Routes = [
     },
     {
         path:'usuarios',
-        loadComponent: () => 
-            import('./usuarios/lista-usuarios/lista-usuarios').then(m => m.ListaUsuarios)
+        loadChildren: () => 
+            import('./usuarios/usuarios-module').then(m => m.UsuariosModule)
     },
     {
         path:'productos',
-        loadComponent: () =>
-            import('./productos/lista-productos/lista-productos').then(m => m.ListaProductos)
-    },
-    {
-        path:'productos/:id',
-        loadComponent: () =>
-            import('./productos/detalle-producto/detalle-producto').then(m => m.DetalleProducto)
+        loadChildren: () =>
+            import('./productos/productos-module').then(m => m.ProductosModule)
     },
     {
         path:'**',

@@ -13,7 +13,9 @@ export class App implements OnInit {
 
   ngOnInit(): void {
     const ultimaRuta = localStorage.getItem('ultimaRuta');
-    if(ultimaRuta && ultimaRuta !== '/'){
+    const rutaActual = window.location.pathname;
+
+    if(ultimaRuta && ultimaRuta !== '/' && rutaActual === '/'){
       this.router.navigate([ultimaRuta]);
     }
 

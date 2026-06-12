@@ -1,59 +1,61 @@
-# AppRouting
+# App Routing — Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+## Descripción
+Aplicación desarrollada con Angular que implementa routing, lazy loading,
+rutas dinámicas y almacenamiento en localStorage. Permite navegar entre
+secciones de Usuarios y Productos, ver el detalle de cada producto, y
+recuerda la última sección visitada al recargar la app.
 
-## Development server
+---
 
-To start a local development server, run:
+## Tecnologías utilizadas
+- Angular 19
+- TypeScript
+- CSS
 
-```bash
+---
+
+## Instrucciones para ejecutar el proyecto
+
+### 1. Clonar el repositorio
+git clone https://github.com/stevez-maker-dev/app-routing.git
+
+### 2. Instalar dependencias
+npm install
+
+### 3. Ejecutar el proyecto
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 4. Abrir en el navegador
+http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Funcionalidades
+- Navegación entre Inicio, Usuarios y Productos con routerLink
+- Lazy loading en todas las rutas
+- Ruta dinámica /productos/:id con detalle de cada producto
+- localStorage guarda la última sección visitada y redirige automáticamente al recargar
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Despliegue
+- Plataforma: Vercel
+- URL: (agregar link después del despliegue)
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Créditos
+- Autor: Sebastian Tevez
+- Curso: Angular avanzado — Centro de e-Learning UTN BA
+- Módulo 1 - Unidad 4
 
-To build the project run:
+---
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Bibliografía
+- Freeman, A. Pro Angular 9. 6ª ed. Apress; 2020.
+- Angular. Other common Routing Tasks. https://angular.dev/guide/routing/common-router-tasks
+- Angular. NgModules. https://angular.dev/guide/ngmodules/overview
+- Angular. Deployment. https://angular.dev/tools/cli/deployment
+- MDN Web Docs. localStorage. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+- MDN Web Docs. sessionStorage. https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage

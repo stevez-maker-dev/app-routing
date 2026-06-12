@@ -31,5 +31,7 @@ export class DetalleProducto implements OnInit {
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.producto = this.productos.find(p => p.id === id);
+    console.log('ID buscado:', id);
+    console.log('Producto encontrado:', this.producto);
   }
 }

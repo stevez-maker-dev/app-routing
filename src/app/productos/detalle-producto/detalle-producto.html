@@ -1,6 +1,6 @@
 <div>
 
-  <a routerLink="/productos">← Volver a productos</a>
+  <a [routerLink]="['/productos']">← Volver a productos</a>
 
   <div class="detalle" *ngIf="producto; else noEncontrado">
     <h2>{{ producto.nombre }}</h2>
