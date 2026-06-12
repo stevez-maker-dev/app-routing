@@ -45,6 +45,20 @@ http://localhost:4200
 
 ---
 
+## Capturas de prueba
+
+### Pantalla de inicio
+![Pantalla de inicio](public/capturas/inicio.png)
+
+### Lista de usuarios
+![Lista de usuarios](public/capturas/usuarios.png)
+
+### Lista de productos
+![Lista de productos](public/capturas/productos.png)
+
+### Detalle de producto
+![Detalle de producto](public/capturas/detalle.png)
+
 ## Créditos
 - Autor: Sebastian Tevez
 - Curso: Angular avanzado — Centro de e-Learning UTN BA
